@@ -40,6 +40,9 @@
         width: 100vw;
         position: relative;
         background: var(--lightgray);
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       .app-flex-container {
@@ -49,6 +52,7 @@
         /* width: 100%; */
         /* border: 2px solid red; */
         padding: 0.5em;
+        height: 80%;
         font-family: "Barlow Semi Condensed", sans-serif;
         width: clamp(60%, 1200px, 100%);
       }
@@ -150,14 +154,14 @@
 
       .bold {
         font-weight: 800;
-        font-size: 22px;
+        font-size: 1rem;
         line-height: 20px;
         position: relative;
         z-index: 1;
       }
 
       .light {
-        font-size: 1rem;
+        font-size: 0.75rem;
         opacity: 75%;
       }
 
@@ -179,7 +183,7 @@
 
       @media screen and (max-width: 650px) {
         .app {
-          height: 250vh;
+          height: 235vh;
         }
         .left-col-row,
         .app-flex-container {
@@ -188,6 +192,7 @@
 
         .app-flex-container {
           padding: 1em;
+          height: 90%;
         }
 
         .left-main-column,
